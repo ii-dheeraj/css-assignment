@@ -1,0 +1,27 @@
+ANSWER1....CSS selectors are used in HTML to target specific elements and apply styles to them. They allow you to precisely define which HTML elements should be styled and how they should be styled. This separation of content and presentation is crucial for maintaining clean and organized code, as it allows you to change the appearance of your website without altering its structure.
+
+ANSWER2...There are several types of CSS selectors:
+
+Element Selector: Targets HTML elements by their tag name (e.g., p selects all <p> elements).
+Class Selector: Targets elements with a specific class attribute (e.g., .my-class selects all elements with class="my-class").
+ID Selector: Targets a single element with a specific ID attribute (e.g., #my-id selects the element with id="my-id").
+Attribute Selector: Targets elements based on their attributes (e.g., [href] selects all elements with a href attribute).
+Pseudo-class Selector: Targets elements based on their state or position (e.g., :hover selects elements when the mouse is over them).
+Pseudo-element Selector: Targets specific parts of elements (e.g., ::before selects the content before an element).
+
+ANSWER3..To include external fonts and apply them in CSS, we typically use the @font-face rule to specify the font files and then use the font-family property to apply them to specific elements. 
+
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('path/to/font.woff2') format('woff2')
+         url('path/to/font.woff') format('woff');   
+   
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif; 
+}
+
+
+
